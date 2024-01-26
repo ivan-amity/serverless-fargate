@@ -82,10 +82,13 @@ fargate:
   environment:
     name: value
 
-  # (optional) name used for the provisoned log group.
+  # (optional) name used for the provisioned log group.
   logGroupName: my-cluster-log-group
+  
+  # Specifies the log group class for provisioned log group. There are two classes: STANDARD | INFREQUENT_ACCESS
+  LogGroupClass: STANDARD
 
-  # (optional) the number of days to retain the log events in the provisoned log group.
+  # (optional) the number of days to retain the log events in the provisioned log group.
   logRetentionInDays: 365
 
   # (optional) default execution role ARN you wish to use for the task.

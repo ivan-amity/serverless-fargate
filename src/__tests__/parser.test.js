@@ -44,6 +44,7 @@ test('full service task configuration', () => {
       global: 'variable',
     },
     logGroupName: 'my-log-group',
+    LogGroupClass: 'STANDARD',
     logRetentionInDays: 356,
     executionRoleArn: 'arn:aws:iam::123456:role/my-custom-execution-role',
     taskRoleArn: 'arn:aws:iam::123456:role/my-custom-task-role',
