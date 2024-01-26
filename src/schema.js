@@ -11,10 +11,7 @@ module.exports = {
     executionRoleArn: { anyOf: [{ type: 'object' }, { type: 'string' }] },
     taskRoleArn: { anyOf: [{ type: 'object' }, { type: 'string' }] },
     logGroupName: { type: 'string' },
-    logGroupClass: {
-      type: 'string',
-      enum: ['STANDARD', 'INFREQUENT_ACCESS'],
-    },
+    logGroupClass: { type: 'string' },
     logRetentionInDays: {
       type: 'integer',
       enum: [
