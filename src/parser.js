@@ -93,6 +93,7 @@ module.exports = config => {
     iamRoleStatements: config.iamRoleStatements || [],
     iamManagedPolicies: config.iamManagedPolicies || [],
     logGroupName: config.logGroupName,
+    logGroupClass: config.logGroupClass || 'STANDARD',
     logRetentionInDays: config.logRetentionInDays,
     vpc: {
       subnetIds: get(config, 'vpc.subnetIds', []),
